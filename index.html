@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flicker - Angularjs- node</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
+    <link rel="stylesheet" href="bower_components/angular-material/themes/blue-theme.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body ng-app="ngFlicker"
+      ng-controller="ListController" layout="column" layout-align="top center">
+
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <span class="md-flex"> Node Flicker Search</span>
+    </div>
+</md-toolbar>
+
+<md-content layout="column" layout-align=" center center">
+    <div class="app-content">
+
+        <form ng-submit="search()">
+            <div ng-show="!isSearching">
+                <md-text-float label="search for Image" class="long"
+                               ng-model="searchTerm"></md-text-float>
+            </div>
+                <md-progress-linear ng-if="isSearching" md-mode="indeterminate"></md-progress-linear>
+
+        </form>
+
+        <md-list>
+            <md-item ng-repeat="picture in results.photos.photo">
+
+                <div class="md-tile">
+                    <img id="img-img"
+                         ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_c.jpg" alt=""/>
+                    <h3>{{picture.title}}</h3>
+                </div>
+
+            </md-item>
+        </md-list>
+    </div>
+
+</md-content>
+
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/hammerjs/hammer.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "ng-nodeflicker",
+  "version": "0.0.0",
+  "authors": [
+    "Zacarias Ripoll-Cid <zacariasripollcid@gmail.com>"
+  ],
+  "description": "App written in Angularjs, nodejs, Material Design taking the tumblr api. Experiment",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~0.6.1",
+    "angular-animate": "~1.3.10",
+    "angular-aria": "~1.3.10",
+    "hammerjs": "~2.0.4"
+  }
+}
