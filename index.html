@@ -25,7 +25,7 @@
 
         <form ng-submit="search()">
             <div ng-show="!isSearching">
-                <md-text-float label="search for Image" class="long" ng-model="searchTerm"></md-text-float>
+                <md-text-float label="Type here and press Enter" class="long" ng-model="searchTerm"></md-text-float>
             </div>
             <md-progress-linear ng-if="isSearching" md-mode="indeterminate"></md-progress-linear>
 
