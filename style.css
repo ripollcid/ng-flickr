@@ -53,6 +53,9 @@ h3{
         height: 100%;
         width: 80%;
     }
+    .long{
+        font-size: 1em;
+    }
     h3{
         margin: 5px;
     }
