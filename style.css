@@ -53,6 +53,9 @@ h3{
         height: 100%;
         width: 80%;
     }
+    img{
+        height: 10em;
+    }
     .long{
         font-size: 1em;
     }
