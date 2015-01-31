@@ -1,6 +1,9 @@
 html,body{
     margin: 0;
 }
+md-toolbar.md-default-theme{
+    background-color: green;
+}
 .app-content{
     width: 100%;
 
